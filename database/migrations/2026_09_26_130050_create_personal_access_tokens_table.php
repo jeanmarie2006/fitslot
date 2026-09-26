@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
-            $table->morphs('tokenable');
+            $table->string('tokenable_type');
+            $table->unsignedBigInteger('tokenable_id');
+            // nom d'index court : avec un préfixe de table, le nom généré dépasserait la limite de 64 caractères de MySQL
+            $table->index(['tokenable_type', 'tokenable_id'], 'pat_tokenable_idx');
             $table->text('name');
             $table->string('token', 64)->unique();
             $table->text('abilities')->nullable();
