@@ -3,6 +3,9 @@
 Application permettant à une salle de sport ou à un coach indépendant de gérer ses créneaux, les réservations de ses
 clients et le suivi de leurs abonnements. Projet n°6 du cahier des charges « 9 projets fictifs ».
 
+**🔗 Démo en ligne :** https://mes-apps.wuaze.com/fitslot/ — **📲 Installer l’application** (mobile, tablette, ordinateur) : https://mes-apps.wuaze.com/fitslot/#/installer
+
+
 ![Accueil](docs/accueil.png)
 ![Planning (FullCalendar)](docs/planning.png)
 ![Tableau de bord du coach](docs/coach.png)
